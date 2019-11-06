@@ -1,0 +1,24 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "es5",
+    "noImplicitAny": false,
+    "module": "commonjs", /* amd */
+    "declaration": true, /* in our project it's false */
+    "outDir": "./dist",
+    "removeComments": false,
+    "noEmitOnError": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "typeRoots": [ "node_modules/@types", "definitelyTyped" ],
+	  "sourceMap": true
+    /*
+    "rootDir": ".",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "preserveSymlinks": true,
+    "lib": [ "es2018", "dom" ]   
+    */
+  }
+}
