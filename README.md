@@ -2,24 +2,27 @@
 Draw charts from Kusto query data
 
 ## Installation 
-npm install queryDataToChartPrivate --save
+npm install query-data-to-chart-private
 
 ## Usage
-### Javascript
-```javascript
-var pluralise = require('mypluralize');
-var boys = pluralise.getPlural('Boy');
-```
-```sh
-Output should be 'Boys'
-```
 ### TypeScript
 ```typescript
-import { getPlural } from 'mypluralize';
-console.log(getPlural('Goose'))
+import { KustoChartHelper, ITransformedQueryResultData, ChartType, DraftColumnType } from 'query-data-to-chart-private';
+
+const chartHelper = new KustoChartHelper();
+const chartOptions: IChartOptions = {
+    chartType: ChartType.Column,
+    columnsSelection: {
+        xAxis: { name: 'timestamp', type: DraftColumnType.DateTime },
+        yAxes: [{ name: 'requestCount', type: DraftColumnType.Int }]
+    }
+};
+
+const transformed: ITransformedQueryResultData = this.chartHelper.transformQueryResultData(this.queryResult.data, chartOptions);
+
 ```
 ```sh
-Output should be 'Geese'
+The original query response data will be transformed
 ```
 ### AMD
 ```javascript
