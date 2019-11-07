@@ -1,3 +1,5 @@
+# ** This package is a work in process. Please DO NOT USE it yet **
+
 [![Build Status](https://travis-ci.org/sigalvo/query-data-to-chart-private.svg?branch=master)](https://travis-ci.org/sigalvo/query-data-to-chart-private)
 
 # query-data-to-chart-private
@@ -7,32 +9,23 @@ Draw charts from Kusto query data
 npm install query-data-to-chart-private
 
 ## Usage
-### TypeScript
 ```typescript
-import { KustoChartHelper, ITransformedQueryResultData, ChartType, DraftColumnType } from 'query-data-to-chart-private';
+import * as Charts from 'query-data-to-chart-private';
 
-const chartHelper = new KustoChartHelper();
-const chartOptions: IChartOptions = {
-    chartType: ChartType.Column,
+const chartHelper = new Charts.KustoChartHelper();
+const chartOptions: Charts.IChartOptions = {
+    chartType: Charts.ChartType.Column,
     columnsSelection: {
-        xAxis: { name: 'timestamp', type: DraftColumnType.DateTime },
-        yAxes: [{ name: 'requestCount', type: DraftColumnType.Int }]
+        xAxis: { name: 'timestamp', type: Charts.DraftColumnType.DateTime },
+        yAxes: [{ name: 'requestCount', type: Charts.DraftColumnType.Int }]
     }
 };
+const transformed: Charts.ITransformedQueryResultData = chartHelper.transformQueryResultData(queryResult.data, chartOptions);
+```
 
-const transformed: ITransformedQueryResultData = this.chartHelper.transformQueryResultData(this.queryResult.data, chartOptions);
+## Test
+Unit tests are written using [Jest](https://jestjs.io/).
 
-```
 ```sh
-The original query response data will be transformed
-```
-### AMD
-```javascript
-define(function(require,exports,module){
-  var pluralise = require('mypluralize');
-});
-```
-## Test 
-```sh
-npm run test
+Run tests: npm run test
 ```
