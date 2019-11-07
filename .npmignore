@@ -1,0 +1,12 @@
+.github
+.idea
+/src
+/.vscode
+/.definitelyTyped
+tsconfig.json
+.travis.yml
+launch.json
+tasks.json
+node_modules
+index.ts
+*.tgz
