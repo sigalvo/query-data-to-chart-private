@@ -25,6 +25,7 @@
     "url": "https://github.com/sigalvo/query-data-to-chart-private/issues"
   },
   "homepage": "https://github.com/sigalvo/query-data-to-chart-private#readme",
+  "files": ["dist/**/*"],
   "devDependencies": {
     "typescript": "^3.7.2",
     "@types/jest": "^24.0.22",
@@ -37,11 +38,6 @@
     "testMatch": [
       "**/dist/**/?(*.)(spec|test).js?(x)"
     ],
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "json"
-    ]
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
   }
 }
