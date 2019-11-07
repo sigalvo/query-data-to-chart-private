@@ -1,8 +1,8 @@
 .github
 .idea
 /src
+/definitelyTyped
 /.vscode
-/.definitelyTyped
 tsconfig.json
 .travis.yml
 launch.json

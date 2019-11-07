@@ -1,4 +1,4 @@
 'use strict';
 
 export * from './src/common/chartModels';
-export { KustoChartHelper } from './src/common/kustoChartHelper';
+export { KustoChartHelper, ITransformedQueryResultData } from './src/common/kustoChartHelper';
