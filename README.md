@@ -34,3 +34,5 @@ define(function(require,exports,module){
 ```sh
 npm run test
 ```
+
+[![Build Status](https://travis-ci.org/sigalvo/query-data-to-chart-private.svg?branch=master)](https://travis-ci.org/sigalvo/query-data-to-chart-private)
