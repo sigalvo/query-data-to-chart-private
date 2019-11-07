@@ -3,7 +3,7 @@
   "compilerOptions": {
     "target": "es5",
     "noImplicitAny": false,
-    "module": "amd",
+    "module": "commonjs",
     "declaration": true,
     "outDir": "./dist",
     "removeComments": false,
