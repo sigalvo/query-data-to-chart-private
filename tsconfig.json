@@ -1,11 +1,11 @@
 {
-  "compileOnSave": true,
   "compilerOptions": {
+    "lib": [ "es2018", "dom" ],
     "target": "es5",
-    "noImplicitAny": false,
     "module": "commonjs",
     "declaration": true,
     "outDir": "./dist",
+    "noImplicitAny": false,
     "removeComments": false,
     "noEmitOnError": true,
     "emitDecoratorMetadata": true,
