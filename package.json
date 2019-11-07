@@ -1,6 +1,6 @@
 {
   "name": "query-data-to-chart-private",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Draw charts from Kusto query data",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
@@ -17,9 +17,9 @@
   },
   "keywords": [],
   "author": {
-		"name": "Violet Voronetzky",
-		"email": "sigalvo@microsoft.com"
-	},
+    "name": "Violet Voronetzky",
+    "email": "sigalvo@microsoft.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sigalvo/query-data-to-chart-private/issues"
@@ -35,13 +35,15 @@
     "lodash": "^4.17.15",
     "moment": "^2.24.0"
   },
-	"jest": {
-    "testMatch": ["**/dist/**/?(*.)(spec|test).js?(x)"],
+  "jest": {
+    "testMatch": [
+      "**/dist/**/?(*.)(spec|test).js?(x)"
+    ],
     "moduleFileExtensions": [
       "ts",
       "tsx",
-	    "js",
-	    "json"
-    ]	
+      "js",
+      "json"
+    ]
   }
 }
