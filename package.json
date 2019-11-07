@@ -1,6 +1,6 @@
 {
   "name": "query-data-to-chart-private",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Draw charts from Kusto query data",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
